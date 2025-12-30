@@ -4,14 +4,14 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from BADMUSIC import Platform, app
-from BADMUSIC.core.call import BAD
-from BADMUSIC.misc import db
-from BADMUSIC.utils.database import get_loop
-from BADMUSIC.utils.decorators import AdminRightsCheck
-from BADMUSIC.utils.inline.play import stream_markup, telegram_markup
-from BADMUSIC.utils.stream.autoclear import auto_clean
-from BADMUSIC.utils.thumbnails import gen_thumb
+from UCHIHA import Platform, app
+from UCHIHA.core.call import ARJUN
+from UCHIHA.misc import db
+from UCHIHA.utils.database import get_loop
+from UCHIHA.utils.decorators import AdminRightsCheck
+from UCHIHA.utils.inline.play import stream_markup, telegram_markup
+from UCHIHA.utils.stream.autoclear import auto_clean
+from UCHIHA.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
