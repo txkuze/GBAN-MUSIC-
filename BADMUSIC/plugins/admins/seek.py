@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BADMUSIC import Platform, app
-from BADMUSIC.core.call import BAD
-from BADMUSIC.misc import db
-from BADMUSIC.utils import AdminRightsCheck, seconds_to_min
+from UCHIHA import Platform, app
+from UCHIHA.core.call import ARJUN
+from UCHIHA.misc import db
+from UCHIHA.utils import AdminRightsCheck, seconds_to_min
 
 # Command
 SEEK_COMMAND = get_command("SEEK_COMMAND")
