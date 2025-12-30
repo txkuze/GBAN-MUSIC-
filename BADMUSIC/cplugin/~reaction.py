@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 import random
 
-EMOJIS = ["🥰", "❤️", "😁", "💋", "😱", "🤣", "😘", "❤️‍🔥", "👌", "🫡", "😍"]
+EMOJIS = ["❄️", "🎊", "😁", "📢", "😱", "🤣", "👀", "❤️‍🔥", "👌", "🫡", "⚡"]
 
 @Client.on_message(filters.incoming)
 async def react_to_messages(client: Client, message: Message):
