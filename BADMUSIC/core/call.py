@@ -25,9 +25,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from BADMUSIC import LOGGER, Platform, app
-from BADMUSIC.misc import db
-from BADMUSIC.utils.database import (
+from UCHIHA import LOGGER, Platform, app
+from UCHIHA.misc import db
+from UCHIHA.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_assistant,
@@ -42,11 +42,11 @@ from BADMUSIC.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from BADMUSIC.utils.exceptions import AssistantErr
-from BADMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
-from BADMUSIC.utils.inline.play import stream_markup, telegram_markup
-from BADMUSIC.utils.stream.autoclear import auto_clean
-from BADMUSIC.utils.thumbnails import gen_thumb
+from UCHIHA.utils.exceptions import AssistantErr
+from UCHIHA.utils.formatters import check_duration, seconds_to_min, speed_converter
+from UCHIHA.utils.inline.play import stream_markup, telegram_markup
+from UCHIHA.utils.stream.autoclear import auto_clean
+from UCHIHA.utils.thumbnails import gen_thumb
 
 
 autoend = {}
@@ -62,7 +62,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="BadAss1",
+            name="ARJUN1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -72,7 +72,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="BadAss2",
+            name="ARJUN2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -82,7 +82,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="BadAss3",
+            name="ARJUN3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -92,7 +92,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="BadAss4",
+            name="ARJUN4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -102,7 +102,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="BadAss5",
+            name="ARJUN5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
