@@ -41,7 +41,7 @@ class BADBOT(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting Bot")
         super().__init__(
-            "BADMUSIC",
+            "UCHIHA",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -60,23 +60,23 @@ class BADBOT(Client):
             [
                         [
             InlineKeyboardButton(
-                text="๏ ꜱᴛᴀʀᴛ ᴛᴏ ᴘᴍ ๏",
+                text="📢 ꜱᴛᴀʀᴛ ᴛᴏ ᴘᴍ 📢",
                 url=f"https://t.me/{self.username}?start=start",
             ),
            ],
              [
                     InlineKeyboardButton(
-                        text="๏ ᴏᴡɴᴇʀ ๏",
-                        url=f"https://t.me/dark_x_knight_musiczz_support",
+                        text="👨‍💻 ᴄ❍ᴅᴇꝛ 👨‍💻",
+                        url=f"https://t.me/uchiha_owner",
                     ),
                     InlineKeyboardButton(
-                        text="๏ ᴜᴘᴅᴀᴛᴇ ๏",
-                        url=f"https://t.me/dark_x_knight_musiczz_support",
+                        text="🍹 𝐔ᴘᴅᴀᴛᴇ 🍹",
+                        url=f"https://t.me/dark_musictm",
                     )
               ],
                 [
                     InlineKeyboardButton(
-                        text="๏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ๏",
+                        text="⚓ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ⚓",
                         url=f"https://t.me/{self.username}?startgroup=true",
                     )
                 ]
@@ -138,31 +138,31 @@ class BADBOT(Client):
                 )
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("start", "❥ Start the bot"),
-                        BotCommand("ping", "❥ Check the ping"),
-                        BotCommand("help", "❥ Get help"),
-                        BotCommand("vctag", "❥ Tag all for voice chat"),
-                        BotCommand("stopvctag", "❥ Stop tagging for VC"),
-                        BotCommand("tagall", "❥ Tag all members by text"),
-                        BotCommand("cancel", "❥ Cancel the tagging"),
-                        BotCommand("settings", "❥ Get the settings"),
-                        BotCommand("reload", "❥ Reload the bot"),
-                        BotCommand("play", "❥ Play the requested song"),
-                        BotCommand("vplay", "❥ Play video along with music"),
-                        BotCommand("end", "❥ Empty the queue"),
-                        BotCommand("playlist", "❥ Get the playlist"),
-                        BotCommand("stop", "❥ Stop the song"),
-                        BotCommand("lyrics", "❥ Get the song lyrics"),
-                        BotCommand("song", "❥ Download the requested song"),
-                        BotCommand("video", "❥ Download the requested video song"),
-                        BotCommand("gali", "❥ Reply with fun"),
-                        BotCommand("shayri", "❥ Get a shayari"),
-                        BotCommand("love", "❥ Get a love shayari"),
-                        BotCommand("sudolist", "❥ Check the sudo list"),
-                        BotCommand("owner", "❥ Check the owner"),
-                        BotCommand("update", "❥ Update bot"),
-                        BotCommand("gstats", "❥ Get stats of the bot"),
-                        BotCommand("repo", "❥ Check the repo"),
+                        BotCommand("start", "✓✦ Start the bot"),
+                        BotCommand("ping", "❥✦ Check the ping"),
+                        BotCommand("help", "❥✦ Get help"),
+                        BotCommand("vctag", "❥✦ Tag all for voice chat"),
+                        BotCommand("stopvctag", "❥✦ Stop tagging for VC"),
+                        BotCommand("tagall", "❥✦ Tag all members by text"),
+                        BotCommand("cancel", "❥✦ Cancel the tagging"),
+                        BotCommand("settings", "❥✦ Get the settings"),
+                        BotCommand("reload", "❥✦ Reload the bot"),
+                        BotCommand("play", "❥✦ Play the requested song"),
+                        BotCommand("vplay", "❥✦ Play video along with music"),
+                        BotCommand("end", "❥✦ Empty the queue"),
+                        BotCommand("playlist", "❥✦ Get the playlist"),
+                        BotCommand("stop", "❥✦ Stop the song"),
+                        BotCommand("lyrics", "❥✦ Get the song lyrics"),
+                        BotCommand("song", "❥✦ Download the requested song"),
+                        BotCommand("video", "❥✦ Download the requested video song"),
+                        BotCommand("gali", "❥✦ Reply with fun"),
+                        BotCommand("shayri", "❥✦ Get a shayari"),
+                        BotCommand("love", "❥✦ Get a love shayari"),
+                        BotCommand("sudolist", "❥✦ Check the sudo list"),
+                        BotCommand("owner", "❥✦ Check the owner"),
+                        BotCommand("update", "❥✦ Update bot"),
+                        BotCommand("gstats", "❥✦ Get stats of the bot"),
+                        BotCommand("repo", "❥✦ Check the repo"),
                     ],
                     scope=BotCommandScopeAllChatAdministrators(),
                 )
