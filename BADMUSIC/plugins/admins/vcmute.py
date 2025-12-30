@@ -5,10 +5,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from BADMUSIC import app
-from BADMUSIC.core.call import BAD
-from BADMUSIC.utils.database import is_muted, mute_off, mute_on
-from BADMUSIC.utils.decorators import AdminRightsCheck
+from UCHIHA import app
+from UCHIHA.core.call import ARJUN
+from UCHIHA.utils.database import is_muted, mute_off, mute_on
+from UCHIHA.utils.decorators import AdminRightsCheck
 
 
 @app.on_message(filters.command(["vcmute"]) & filters.group & ~BANNED_USERS)
