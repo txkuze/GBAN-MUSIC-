@@ -14,12 +14,12 @@ from config import (
     adminlist,
     lyrical,
 )
-from BADMUSIC import Platform, app
-from BADMUSIC.core.call import BAD
-from BADMUSIC.misc import SUDOERS, db
-from BADMUSIC.utils import seconds_to_min, time_to_seconds
-from BADMUSIC.utils.channelplay import get_channeplayCB
-from BADMUSIC.utils.database import (
+from UCHIHA import Platform, app
+from UCHIHA.core.call import BAD
+from UCHIHA.misc import SUDOERS, db
+from UCHIHA.utils import seconds_to_min, time_to_seconds
+from UCHIHA.utils.channelplay import get_channeplayCB
+from UCHIHA.utils.database import (
     is_active_chat,
     is_music_playing,
     is_muted,
@@ -30,10 +30,10 @@ from BADMUSIC.utils.database import (
     mute_on,
     set_loop,
 )
-from BADMUSIC.utils.decorators import ActualAdminCB
-from BADMUSIC.utils.decorators.language import languageCB
-from BADMUSIC.utils.formatters import seconds_to_min
-from BADMUSIC.utils.inline.play import (
+from UCHIHA.utils.decorators import ActualAdminCB
+from UCHIHA.utils.decorators.language import languageCB
+from UCHIHA.utils.formatters import seconds_to_min
+from UCHIHA.utils.inline.play import (
     livestream_markup,
     panel_markup_1,
     panel_markup_2,
@@ -42,9 +42,9 @@ from BADMUSIC.utils.inline.play import (
     stream_markup,
     telegram_markup,
 )
-from BADMUSIC.utils.stream.autoclear import auto_clean
-from BADMUSIC.utils.stream.stream import stream
-from BADMUSIC.utils.thumbnails import gen_thumb
+from UCHIHA.utils.stream.autoclear import auto_clean
+from UCHIHA.utils.stream.stream import stream
+from UCHIHA.utils.thumbnails import gen_thumb
 
 wrong = {}
 
