@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from BADMUSIC import app
-from BADMUSIC.core.call import BAD
+from UCHIHA import app
+from UCHIHA.core.call import BAD
 
 
 @app.on_message(filters.video_chat_started, group=20)
