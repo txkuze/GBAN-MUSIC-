@@ -9,15 +9,15 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://BADMUNDA:BADMYDAD@badhacker.i5nw9na.mongodb.net/"
+TEMP_MONGODB = "mongodb+srv://knight4563:knight4563@cluster0.a5br0se.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "𝐍o 𝐌ONGO 𝐃B 𝐔RL 𝐅ound.. 𝐘our 𝐁ot 𝐖ill 𝐖ork 𝐎n 𝐁ᴀᴅ 𝐌𝐔𝐒𝐈𝐂 𝐃atabase"
+        "𝐍o 𝐌ONGO 𝐃B 𝐔RL 𝐅ound.. 𝐘our 𝐁ot 𝐖ill 𝐖ork 𝐎n Uᴄʜɪʜᴀ - ᴍᴜ𝛅𝛊ᴄ ʙᴏᴛs 𝐃atabase"
     )
     temp_client = Client(
-        "BADMUSIC",
+        "UCHIHA",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
