@@ -3,13 +3,13 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from BADMUSIC import app
-from BADMUSIC.utils.database import get_loop
-from BADMUSIC.utils.stream.filters import command
-from BADMUSIC.utils.decorators import language
-from BADMUSIC.utils.stream.stream import stream
-from BADMUSIC.utils.stream.ytstream import yt_stream
-from BADMUSIC.utils.inline.play import stream_markup
+from UCHIHA import app
+from UCHIHA.utils.database import get_loop
+from UCHIHA.utils.stream.filters import command
+from UCHIHA.utils.decorators import language
+from UCHIHA.utils.stream.stream import stream
+from UCHIHA.utils.stream.ytstream import yt_stream
+from UCHIHA.utils.inline.play import stream_markup
 
 @app.on_message(
     command(["play", "vplay", "cplay"]) & filters.group & ~BANNED_USERS
