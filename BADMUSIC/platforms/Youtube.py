@@ -3,8 +3,8 @@ import re
 import traceback
 from yt_dlp import YoutubeDL
 from youtubesearchpython.__future__ import VideosSearch
-from BADMUSIC.platforms.Spotify import Spotify
-from BADMUSIC.platforms.Apple import Apple
+from UCHIHA.platforms.Spotify import Spotify
+from UCHIHA.platforms.Apple import Apple
 
 class YouTube:
     def __init__(self):
