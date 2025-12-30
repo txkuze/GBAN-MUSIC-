@@ -10,8 +10,8 @@ from pyrogram.types import (
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import BANNED_USERS
-from BADMUSIC import app
-from BADMUSIC.utils.inlinequery import answer
+from UCHIHA import app
+from UCHIHA.utils.inlinequery import answer
 
 
 @app.on_inline_query(~BANNED_USERS)
@@ -57,7 +57,7 @@ async def inline_query_handler(client, query):
 
 __ʀᴇᴘʟʏ ᴡɪᴛʜ /play ᴏɴ ᴛʜɪs sᴇᴀʀᴄʜᴇᴅ ᴍᴇssᴀɢᴇ ᴛᴏ sᴛʀᴇᴀᴍ ɪᴛ ᴏɴ ᴠᴏɪᴄᴇᴄʜᴀᴛ.__
 
-⚡️ ** ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ʙʏ {app.mention} **"""
+⚡️ ** ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ On sᴜᴘᴇʀʙᴀɴ ʙʏ {app.mention} **"""
             answers.append(
                 InlineQueryResultPhoto(
                     photo_url=thumbnail,
