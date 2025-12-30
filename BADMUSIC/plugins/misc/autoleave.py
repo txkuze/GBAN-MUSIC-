@@ -4,15 +4,15 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from BADMUSIC import app
-from BADMUSIC.core.call import BAD, autoend
-from BADMUSIC.utils.database import get_client, is_active_chat, is_autoend
+from UCHIHA import app
+from UCHIHA.core.call import ARJUN, autoend
+from UCHIHA.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT == str(True):
         while not await asyncio.sleep(config.AUTO_LEAVE_ASSISTANT_TIME):
-            from BADMUSIC.core.userbot import assistants
+            from UCHIHA.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -28,8 +28,8 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if chat_id not in [
                                 config.LOG_GROUP_ID,
-                                -1002159045835,
-                                -1002146211959,
+                                -1003633844538,
+                                -1003633844538,
                             ]:
                                 if left == 20:
                                     continue
@@ -60,7 +60,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await BAD.stop_stream(chat_id)
+                    await ARJUN.stop_stream(chat_id)
                 except:
                     continue
                 try:
