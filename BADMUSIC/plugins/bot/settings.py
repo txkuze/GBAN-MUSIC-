@@ -10,8 +10,8 @@ from pyrogram.types import (
 
 from config import BANNED_USERS, CLEANMODE_DELETE_MINS, OWNER_ID
 from strings import get_command
-from BADMUSIC import app
-from BADMUSIC.utils.database import (
+from UCHIHA import app
+from UCHIHA.utils.database import (
     add_nonadmin_chat,
     cleanmode_off,
     cleanmode_on,
@@ -32,9 +32,9 @@ from BADMUSIC.utils.database import (
     set_playmode,
     set_playtype,
 )
-from BADMUSIC.utils.decorators.admins import ActualAdminCB
-from BADMUSIC.utils.decorators.language import language, languageCB
-from BADMUSIC.utils.inline.settings import (
+from UCHIHA.utils.decorators.admins import ActualAdminCB
+from UCHIHA.utils.decorators.language import language, languageCB
+from UCHIHA.utils.inline.settings import (
     audio_quality_markup,
     auth_users_markup,
     cleanmode_settings_markup,
@@ -42,7 +42,7 @@ from BADMUSIC.utils.inline.settings import (
     setting_markup,
     video_quality_markup,
 )
-from BADMUSIC.utils.inline.start import private_panel
+from UCHIHA.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
