@@ -11,10 +11,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS, START_IMG_URL
 from strings import get_command, get_string
-from BADMUSIC import HELPABLE, app
-from BADMUSIC.utils.database import get_lang, is_commanddelete_on
-from BADMUSIC.utils.decorators.language import LanguageStart
-from BADMUSIC.utils.inline.help import private_help_panel
+from UCHIHA import HELPABLE, app
+from UCHIHA.utils.database import get_lang, is_commanddelete_on
+from UCHIHA.utils.decorators.language import LanguageStart
+from UCHIHA.utils.inline.help import private_help_panel
 
 ### Command
 HELP_COMMAND = get_command("HELP_COMMAND")
@@ -332,14 +332,14 @@ async def music_helper_cb(client, CallbackQuery, _):
 async def about_callback(client: Client, callback_query: CallbackQuery):
     buttons = [
         [
-            InlineKeyboardButton(text="🤡 ᴏᴡɴᴇʀ 🤡", user_id=config.OWNER_ID[0]),
+            InlineKeyboardButton(text="👨‍💻 ᴄ❍ᴅᴇꝛ 👨‍💻", user_id=config.OWNER_ID[0]),
             InlineKeyboardButton(
                 text="📍sᴜᴅᴏᴇʀs📍", url=f"https://t.me/{app.username}?start=sudo"
             ),
         ],
         [
-            InlineKeyboardButton(text="🔗 ɪɴsᴛᴀ 🔗", url=f"instagram.com/lll_bad_munda_lll"),
-            InlineKeyboardButton(text="🔞18+🔞", url=f"https://t.me/UDNA_SP_BKP/25"),
+            InlineKeyboardButton(text="🔗 TELEGRAM 🔗", url=f"https://t.me/uchiha_owner"),
+            InlineKeyboardButton(text="🎊 SUPPORT 🎊", url=f"https://t.me/SNOWY_HOMETOWN"),
         ],
         [
             InlineKeyboardButton(text="🔙 Back", callback_data="about")
@@ -476,10 +476,10 @@ async def about_callback(client: Client, callback_query: CallbackQuery):
 async def back_button_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [
         [
-            InlineKeyboardButton(text="🤡 ᴏᴡɴᴇʀ 🤡", user_id=config.OWNER_ID[0]),
+            InlineKeyboardButton(text=" ᴄ❍ᴅᴇꝛ ", user_id=config.OWNER_ID[0]),
             InlineKeyboardButton(
                 text="🗝️ ɢɪᴛʜᴜʙ 🗝️",
-                url="https://github.com/Badhacker98",
+                url="https://github.com/txkuze",
             ),
         ],
         [
