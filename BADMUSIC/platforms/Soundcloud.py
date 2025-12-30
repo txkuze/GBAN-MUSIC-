@@ -2,8 +2,8 @@ from os import path
 
 from yt_dlp import YoutubeDL
 
-from BADMUSIC.utils.formatters import seconds_to_min
-from BADMUSIC.utils.decorators import asyncify
+from UCHIHA.utils.formatters import seconds_to_min
+from UCHIHA.utils.decorators import asyncify
 
 
 class SoundCloud:
