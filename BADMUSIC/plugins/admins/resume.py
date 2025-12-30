@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
-from BADMUSIC import app
-from BADMUSIC.core.call import BAD as BAD
-from BADMUSIC.utils.database import is_music_playing, music_on
-from BADMUSIC.utils.decorators import AdminRightsCheck
+from UCHIHA import app
+from UCHIHA.core.call import ARJUN as ARJUN
+from UCHIHA.utils.database import is_music_playing, music_on
+from UCHIHA.utils.decorators import AdminRightsCheck
 
 
 @app.on_message(filters.command(["resume", "cresume"]) & filters.group & ~BANNED_USERS)
