@@ -16,11 +16,11 @@ clients = []
 
 class Userbot:
     def __init__(self):
-        self.one = self.create_client("BADString1", config.STRING1, "BADMUSIC.plugins.user")
-        self.two = self.create_client("BADString2", config.STRING2)
-        self.three = self.create_client("BADString3", config.STRING3)
-        self.four = self.create_client("BADString4", config.STRING4)
-        self.five = self.create_client("BADString5", config.STRING5)
+        self.one = self.create_client("UCHIHAString1", config.STRING1, "UCHIHA.plugins.user")
+        self.two = self.create_client("UCHIHAString2", config.STRING2)
+        self.three = self.create_client("UCHIHAString3", config.STRING3)
+        self.four = self.create_client("UCHIHAString4", config.STRING4)
+        self.five = self.create_client("UCHIHAString5", config.STRING5)
 
     def create_client(self, name, session, plugin_root=None):
         if not session:
@@ -48,10 +48,10 @@ class Userbot:
 
                 # Try joining required chats
                 for chat in [
-                    "PBX_CHAT",
-                    "HEROKUBIN_01",
-                    "ll_BAD_MUNDA_WORLD_ll",
-                    "ll_BAD_ABOUT_ll",
+                    "SNOWY_HOMETOWN",
+                    "DARK_MUSICTM",
+                    "CUTIES_LOGS",
+                    "DARK_MUSICSUPPORT",
                 ]:
                     try:
                         await client.join_chat(chat)
@@ -62,7 +62,7 @@ class Userbot:
                 clients.append(client)
 
                 try:
-                    await client.send_message(config.LOG_GROUP_ID, f"💫 Assistant {idx} Started ❤️")
+                    await client.send_message(config.LOG_GROUP_ID, f"sᴜᴘᴇʀʙᴀɴ Assistant {idx} Started ❤️ REPO CODED BY 💗 [⚓˹ᴧɴσɴʏᴍσᴜs ⇾ ɴᴇᴏᴄᴏᴅᴇʀ - ❕](https://t.me/uchiha_owner)")
                 except Exception as e:
                     LOGGER(__name__).warning(
                         f"Assistant {idx} failed to access the log group: {e}"
