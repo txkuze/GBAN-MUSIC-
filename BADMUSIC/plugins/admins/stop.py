@@ -1,4 +1,3 @@
-
 import asyncio
 
 from pyrogram import filters
@@ -13,11 +12,11 @@ from pyrogram.types import (
 
 from config import BANNED_USERS, adminlist
 from strings import get_string
-from BADMUSIC import app
-from BADMUSIC.core.call import BAD
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.plugins import extra_plugins_enabled
-from BADMUSIC.utils.database import (
+from UCHIHA import app
+from UCHIHA.core.call import ARJUN
+from UCHIHA.misc import SUDOERS
+from UCHIHA.plugins import extra_plugins_enabled
+from UCHIHA.utils.database import (
     delete_filter,
     get_cmode,
     get_lang,
@@ -36,7 +35,7 @@ async def stop_music(cli, message: Message):
     if await is_maintenance() is False:
         if message.from_user.id not in SUDOERS:
             return await message.reply_text(
-                "Bot is under maintenance. Please wait for some time..."
+                "sᴜᴘᴇʀʙᴀɴ Bot is under maintenance. Please wait for some time..."
             )
     if not len(message.command) < 2:
         if extra_plugins_enabled:
