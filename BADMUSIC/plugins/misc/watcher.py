@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from UCHIHA import app
-from UCHIHA.core.call import BAD
+from UCHIHA.core.call import ARJUN
 
 
 @app.on_message(filters.video_chat_started, group=20)
