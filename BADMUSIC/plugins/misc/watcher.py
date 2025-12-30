@@ -13,6 +13,6 @@ async def force_stop_stream(_, message: Message):
         if message.left_chat_member and not message.left_chat_member is None:
             if message.left_chat_member.id == (await get_assistant(message.chat.id)).id:
                 return await BAD.force_stop_stream(message.chat.id)
-        await BAD.force_stop_stream(message.chat.id)
+        await ARJUN.force_stop_stream(message.chat.id)
     except Exception:
         pass
