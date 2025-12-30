@@ -3,7 +3,7 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from BADMUSIC import app
+from UCHIHA import app
 
 
 @app.on_message(filters.command("privacy"))
