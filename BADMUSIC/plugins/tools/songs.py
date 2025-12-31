@@ -6,7 +6,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 import requests
-from BADMUSIC import app
+from UCHIHA import app
 
 user_last_message_time = {}
 user_command_count = {}
