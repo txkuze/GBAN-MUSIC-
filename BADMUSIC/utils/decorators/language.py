@@ -2,8 +2,8 @@
 # Owner https://t.me/ll_BAD_MUNDA_ll
 
 from strings import get_string
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.database import get_lang, is_commanddelete_on, is_maintenance
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.database import get_lang, is_commanddelete_on, is_maintenance
 
 
 def language(mystic):
@@ -11,7 +11,7 @@ def language(mystic):
         if await is_maintenance() is False:
             if message.from_user.id not in SUDOERS:
                 return await message.reply_text(
-                    "» ʙᴏᴛ ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ғᴏʀ sᴏᴍᴇ ᴛɪᴍᴇ, ᴩʟᴇᴀsᴇ ᴠɪsɪᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴛᴏ ᴋɴᴏᴡ ᴛʜᴇ ʀᴇᴀsᴏɴ."
+                    "✦ ʙᴏᴛ ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ғᴏʀ sᴏᴍᴇ ᴛɪᴍᴇ, ᴩʟᴇᴀsᴇ ᴠɪsɪᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴛᴏ ᴋɴᴏᴡ ᴛʜᴇ ʀᴇᴀsᴏɴ.\n ✦ ᴍᴀᴅᴇ ʙʏᴇ💗 [⚓˹ᴧɴσɴʏᴍσᴜs ⇾ ɴᴇᴏᴄᴏᴅᴇʀ - ❕](https://t.me/uchiha_owner)"
                 )
         if await is_commanddelete_on(message.chat.id):
             try:
@@ -33,7 +33,7 @@ def languageCB(mystic):
         if await is_maintenance() is False:
             if CallbackQuery.from_user.id not in SUDOERS:
                 return await CallbackQuery.answer(
-                    "» ʙᴏᴛ ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ғᴏʀ sᴏᴍᴇ ᴛɪᴍᴇ, ᴩʟᴇᴀsᴇ ᴠɪsɪᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴛᴏ ᴋɴᴏᴡ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
+                    "»✦ ʙᴏᴛ ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ғᴏʀ sᴏᴍᴇ ᴛɪᴍᴇ, ᴩʟᴇᴀsᴇ ᴠɪsɪᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴛᴏ ᴋɴᴏᴡ ᴛʜᴇ ʀᴇᴀsᴏɴ.\n ✦ ᴍᴀᴅᴇ ʙʏᴇ💗 [⚓˹ᴧɴσɴʏᴍσᴜs ⇾ ɴᴇᴏᴄᴏᴅᴇʀ - ❕](https://t.me/uchiha_owner)",
                     show_alert=True,
                 )
         try:
