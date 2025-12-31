@@ -1,5 +1,5 @@
-from BADMUSIC.platforms.Youtube import YouTube
-from BADMUSIC.utils.stream.stream import stream
+from UCHIHA.platforms.Youtube import YouTube
+from UCHIHA.utils.stream.stream import stream
 
 youtube = YouTube()
 
