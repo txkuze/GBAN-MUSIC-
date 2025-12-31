@@ -3,7 +3,7 @@ from pyrogram.handlers import ChatMemberUpdatedHandler
 from pyrogram.types import ChatMemberUpdated, Message
 from typing import Union, List
 
-from BADMUSIC import app
+from UCHIHA import app
 
 # Default state for /infovc
 infovc_enabled = True  # Default to always enabled
@@ -20,7 +20,7 @@ async def toggle_infovc(client: Client, message: Message):
         state = message.command[1].lower()
         if state == "on":
             infovc_enabled = True
-            await message.reply("✅ Voice chat join notifications are now enabled.")
+            await message.reply("✦ Voice chat join notifications are now enabled.")
         elif state == "off":
             infovc_enabled = False
             await message.reply("❌ Voice chat join notifications are now disabled.")
@@ -55,10 +55,10 @@ async def user_joined_voice_chat(client: Client, chat_member_updated: ChatMember
         ):
             # Construct the message
             text = (
-                f"#JoinVoiceChat\n"
-                f"Name: {user.mention(style='md')}\n"
-                f"ID: {user.id}\n"
-                f"Action: Joined a voice chat"
+                f"✦ JoinVoiceChat\n"
+                f"✦ Name: {user.mention(style='md')}\n"
+                f"✦ ID: {user.id}\n"
+                f"✦ Action: Joined a voice chat"
             )
 
             # Debug: Log the message before sending
