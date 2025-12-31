@@ -12,11 +12,11 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS
 from strings import get_command
-from BADMUSIC import Platform, app
-from BADMUSIC.core.userbot import assistants
-from BADMUSIC.misc import SUDOERS, pymongodb
-from BADMUSIC.plugins import ALL_MODULES
-from BADMUSIC.utils.database import (
+from UCHIHA import Platform, app
+from UCHIHA.core.userbot import assistants
+from UCHIHA.misc import SUDOERS, pymongodb
+from UCHIHA.plugins import ALL_MODULES
+from UCHIHA.utils.database import (
     get_global_tops,
     get_particulars,
     get_queries,
@@ -26,8 +26,8 @@ from BADMUSIC.utils.database import (
     get_top_chats,
     get_topp_users,
 )
-from BADMUSIC.utils.decorators.language import language, languageCB
-from BADMUSIC.utils.inline.stats import (
+from UCHIHA.utils.decorators.language import language, languageCB
+from UCHIHA.utils.inline.stats import (
     back_stats_buttons,
     back_stats_markup,
     get_stats_markup,
