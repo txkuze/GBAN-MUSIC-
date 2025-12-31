@@ -1,5 +1,5 @@
-from BADMUSIC import app
-from BADMUSIC.utils.welcome.msg_types import Types
+from UCHIHA import app
+from UCHIHA.utils.welcome.msg_types import Types
 
 
 async def send_cmd(client: app, msgtype: int):
