@@ -7,9 +7,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BADMUSIC import app
-from BADMUSIC.utils.database import set_cmode
-from BADMUSIC.utils.decorators.admins import AdminActual
+from UCHIHA import app
+from UCHIHA.utils.database import set_cmode
+from UCHIHA.utils.decorators.admins import AdminActual
 
 ### Multi-Lang Commands
 CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")
