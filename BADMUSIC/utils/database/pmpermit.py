@@ -1,4 +1,4 @@
-from BADMUSIC.core.mongo import mongodb
+from UCHIHA.core.mongo import mongodb
 
 pmpermitdb = mongodb.permit
 
