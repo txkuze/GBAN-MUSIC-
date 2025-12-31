@@ -2,8 +2,8 @@
 # Owner https://t.me/ll_BAD_MUNDA_ll
 
 
-from BADMUSIC import app
-from BADMUSIC.utils.database import get_cmode
+from UCHIHA import app
+from UCHIHA.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
