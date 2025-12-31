@@ -2,8 +2,8 @@ import time
 
 import psutil
 
-from BADMUSIC.misc import _boot_
-from BADMUSIC.utils.formatters import get_readable_time
+from UCHIHA.misc import _boot_
+from UCHIHA.utils.formatters import get_readable_time
 
 
 async def bot_sys_stats():
