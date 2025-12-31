@@ -1,6 +1,6 @@
 import math
 from pyrogram.types import InlineKeyboardButton
-from BADMUSIC.utils.formatters import time_to_seconds
+from UCHIHA.utils.formatters import time_to_seconds
 
 def get_progress_bar(percentage):
     umm = math.floor(percentage)
