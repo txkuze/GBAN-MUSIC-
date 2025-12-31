@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from BADMUSIC.utils.decorators.language import language
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from UCHIHA.utils.decorators.language import language
 
 # Commands
 
