@@ -4,7 +4,7 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import SUPPORT_GROUP
-from BADMUSIC import app
+from UCHIHA import app
 
 
 def support_group_markup(_):
