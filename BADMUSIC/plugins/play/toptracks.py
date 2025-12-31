@@ -8,19 +8,19 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from BADMUSIC import app
-from BADMUSIC.utils.database import (
+from UCHIHA import app
+from UCHIHA.utils.database import (
     get_global_tops,
     get_particulars,
     get_userss,
 )
-from BADMUSIC.utils.decorators import languageCB
-from BADMUSIC.utils.inline.playlist import (
+from UCHIHA.utils.decorators import languageCB
+from UCHIHA.utils.inline.playlist import (
     botplaylist_markup,
     failed_top_markup,
     top_play_markup,
 )
-from BADMUSIC.utils.stream.stream import stream
+from UCHIHA.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 
