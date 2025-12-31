@@ -5,7 +5,7 @@ import time
 
 import psutil
 
-from BADMUSIC.misc import _boot_
+from UCHIHA.misc import _boot_
 
 from .formatters import get_readable_time
 
