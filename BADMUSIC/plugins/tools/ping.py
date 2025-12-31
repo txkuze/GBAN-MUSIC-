@@ -6,7 +6,7 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, PING_IMG_URL
 from UCHIHA import app
-from UCHIHA.core.call import BAD
+from UCHIHA.core.call import ARJUN
 from UCHIHA.utils import bot_sys_stats
 from UCHIHA.utils.decorators.language import language
 from UCHIHA.utils.inline import support_group_markup
