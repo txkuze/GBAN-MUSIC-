@@ -3,9 +3,9 @@ import speedtest
 from pyrogram import filters
 from pyrogram.types import Message
 
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.decorators.language import language
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.decorators.language import language
 
 
 def testspeed(m, _):
