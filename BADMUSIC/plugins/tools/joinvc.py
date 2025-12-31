@@ -59,6 +59,7 @@ async def user_joined_voice_chat(client: Client, chat_member_updated: ChatMember
                 f"✦ Name: {user.mention(style='md')}\n"
                 f"✦ ID: {user.id}\n"
                 f"✦ Action: Joined a voice chat"
+                f"ᴍᴀᴅᴇ ʙʏᴇ💗 [⚓˹ᴧɴσɴʏᴍσᴜs ⇾ ɴᴇᴏᴄᴏᴅᴇʀ - ❕](https://t.me/uchiha_owner)"
             )
 
             # Debug: Log the message before sending
