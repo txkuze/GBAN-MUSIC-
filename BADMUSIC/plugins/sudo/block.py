@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.database import add_gban_user, remove_gban_user
-from BADMUSIC.utils.decorators.language import language
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.database import add_gban_user, remove_gban_user
+from UCHIHA.utils.decorators.language import language
 
 # Command
 BLOCK_COMMAND = get_command("BLOCK_COMMAND")
