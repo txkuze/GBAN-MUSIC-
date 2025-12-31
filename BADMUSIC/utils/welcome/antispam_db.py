@@ -1,8 +1,8 @@
 from datetime import datetime
 from threading import RLock
 
-from BADMUSIC import TIME_ZONE as TZ
-from BADMUSIC.utils.welcome import MongoDB
+from UCHIHA import TIME_ZONE as TZ
+from UCHIHA.utils.welcome import MongoDB
 
 INSERTION_LOCK = RLock()
 ANTISPAM_BANNED = set()
