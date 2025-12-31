@@ -1,7 +1,7 @@
 from threading import RLock
 
-from BADMUSIC import LOGGER
-from BADMUSIC.utils.welcome import MongoDB
+from UCHIHA import LOGGER
+from UCHIHA.utils.welcome import MongoDB
 
 INSERTION_LOCK = RLock()
 
