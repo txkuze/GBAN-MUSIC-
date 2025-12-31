@@ -2,8 +2,8 @@
 # Owner https://t.me/ll_BAD_MUNDA_ll
 
 from config import LOG, LOG_GROUP_ID
-from BADMUSIC import app
-from BADMUSIC.utils.database import is_on_off
+from UCHIHA import app
+from UCHIHA.utils.database import is_on_off
 
 
 async def play_logs(message, streamtype):
@@ -16,16 +16,16 @@ async def play_logs(message, streamtype):
         logger_text = f"""
 **{app.mention} ᴘʟᴀʏ ʟᴏɢ**
 
-**ᴄʜᴀᴛ ɪᴅ :** `{message.chat.id}`
-**ᴄʜᴀᴛ ɴᴀᴍᴇ :** {message.chat.title}
-**ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ :** {chatusername}
+**✦ ɢʀᴏᴜᴘ ɪᴅ :** `{message.chat.id}`
+**✦ ᴄʜᴀᴛ ɴᴀᴍᴇ :** {message.chat.title}
+**✦ ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ :** {chatusername}
 
-**ᴜsᴇʀ ɪᴅ :** `{message.from_user.id}`
-**ɴᴀᴍᴇ :** {message.from_user.mention}
-**ᴜsᴇʀɴᴀᴍᴇ :** @{message.from_user.username}
+**✦ ᴜsᴇʀ ɪᴅ :** `{message.from_user.id}`
+**✦ ɴᴀᴍᴇ :** {message.from_user.mention}
+**✦ ᴜsᴇʀɴᴀᴍᴇ :** @{message.from_user.username}
 
-**ǫᴜᴇʀʏ :** {message.text.split(None, 1)[1]}
-**sᴛʀᴇᴀᴍᴛʏᴘᴇ :** {streamtype}"""
+**✦ ǫᴜᴇʀʏ :** {message.text.split(None, 1)[1]}
+**✦ sᴛʀᴇᴀᴍᴛʏᴘᴇ :** {streamtype}"""
         if message.chat.id != LOG_GROUP_ID:
             try:
                 await app.send_message(
