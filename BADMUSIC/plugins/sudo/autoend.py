@@ -1,9 +1,9 @@
 from pyrogram import filters
 
 from strings import get_command
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.database import autoend_off, autoend_on
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.database import autoend_off, autoend_on
 
 # Commands
 AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")
