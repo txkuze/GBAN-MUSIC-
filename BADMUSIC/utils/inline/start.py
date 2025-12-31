@@ -2,19 +2,19 @@ from pyrogram.types import InlineKeyboardButton, WebAppInfo
 
 import config
 from config import SUPPORT_GROUP
-from BADMUSIC import app
+from UCHIHA import app
 
 def start_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="💠 𝐀𝙳𝙳 𝙼𝙴 𝙸𝙽 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿𝚂 💠",
+                text="✦ 𝐀𝙳𝙳 𝙼𝙴 𝙸𝙽 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿𝚂 ✦",
                 url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
         [
-            InlineKeyboardButton(text="۞ 𝐇𝙴𝙻𝙿 ۞", callback_data="settings_back_helper"),
-            InlineKeyboardButton(text="☢ 𝐒𝙴𝚃 ☢", callback_data="settings_helper"),
+            InlineKeyboardButton(text="✦ 𝐇𝙴𝙻𝙿 ✦", callback_data="settings_back_helper"),
+            InlineKeyboardButton(text="✦ 𝐒𝙴𝚃 ✦", callback_data="settings_helper"),
         ],
         [
             InlineKeyboardButton(text="✡ 𝐆𝚁𝙾𝚄𝙿 ✡", url=config.SUPPORT_GROUP),
@@ -27,7 +27,7 @@ def private_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="💠 𝐀𝙳𝙳 𝙼𝙴 𝙸𝙽 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿𝚂 💠",
+                text="✦ 𝐀𝙳𝙳 𝙼𝙴 𝙸𝙽 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿𝚂 ✦",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -48,13 +48,13 @@ def alive_panel(_):
     buttons = [
             [
             InlineKeyboardButton(
-                text="📩 ꜱᴛᴀʀᴛ ᴘᴍ",
+                text="✦ ꜱᴛᴀʀᴛ ᴘᴍ ✦",
                 url=f"https://t.me/{app.username}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✿︎ ᴀᴅᴅ ᴍᴇ ✿︎", url=f"https://t.me/{app.username}?startgroup=true"
+                text="✦ ᴀᴅᴅ ᴍᴇ ✦", url=f"https://t.me/{app.username}?startgroup=true"
             ),
             InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}"),
         ],
