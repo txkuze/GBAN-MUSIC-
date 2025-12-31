@@ -10,9 +10,9 @@ from time import time
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.cleanmode import protect_message
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.cleanmode import protect_message
 
 
 async def aexec(code, client, message):
