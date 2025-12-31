@@ -9,7 +9,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from BADMUSIC.core.mongo import pymongodb
+from UCHIHA.core.mongo import pymongodb
 
 from .logging import LOGGER
 
