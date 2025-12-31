@@ -7,9 +7,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string, languages_present
-from BADMUSIC import app
-from BADMUSIC.utils.database import get_lang, set_lang
-from BADMUSIC.utils.decorators import ActualAdminCB, language, languageCB
+from UCHIHA import app
+from UCHIHA.utils.database import get_lang, set_lang
+from UCHIHA.utils.decorators import ActualAdminCB, language, languageCB
 
 # Languages Available
 
