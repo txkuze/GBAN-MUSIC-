@@ -1,7 +1,7 @@
 # Copyright (C) 2024 by Badhacker98@Github, < https://github.com/Badhacker98 >.
 # Owner https://t.me/ll_BAD_MUNDA_ll
 
-from BADMUSIC.utils.database import get_client
+from UCHIHA.utils.database import get_client
 
 
 async def get_assistant_details():
@@ -52,3 +52,4 @@ async def is_avl_assistant():
         return True
     else:
         return False
+
