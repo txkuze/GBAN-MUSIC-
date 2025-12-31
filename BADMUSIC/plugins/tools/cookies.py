@@ -7,8 +7,8 @@ from typing import Union
 from pyrogram import filters
 from yt_dlp import YoutubeDL
 
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
 
 class YouTubeAuthDownloader:
     def __init__(self):
