@@ -1,6 +1,6 @@
 from config import OWNER_ID
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.welcome.support_db import SUPPORTS
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.welcome.support_db import SUPPORTS
 
 
 async def load_support_users():
