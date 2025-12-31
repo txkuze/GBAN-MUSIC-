@@ -1,12 +1,12 @@
 import os
 import asyncio
 
-from BADMUSIC import app
-from BADMUSIC.core.call import BAD
-from BADMUSIC.utils.database import is_video_allowed
+from UCHIHA import app
+from UCHIHA.core.call import BAD
+from UCHIHA.utils.database import is_video_allowed
 from config import DURATION_LIMIT
 
-from BADMUSIC.platforms import PlaTForms  # ✅ Corrected import
+from UCHIHA.platforms import PlaTForms  # ✅ Corrected import
 platform = PlaTForms()
 
 
