@@ -2,12 +2,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS, LOG_GROUP_ID
-from BADMUSIC import app
-from BADMUSIC.core.userbot import assistants
-from BADMUSIC.utils.assistant import get_assistant_details
-from BADMUSIC.utils.assistant import is_avl_assistant as assistant
-from BADMUSIC.utils.database import get_assistant, save_assistant, set_assistant
-from BADMUSIC.utils.decorators import AdminActual
+from UCHIHA import app
+from UCHIHA.core.userbot import assistants
+from UCHIHA.utils.assistant import get_assistant_details
+from UCHIHA.utils.assistant import is_avl_assistant as assistant
+from UCHIHA.utils.database import get_assistant, save_assistant, set_assistant
+from UCHIHA.utils.decorators import AdminActual
 
 
 @app.on_message(filters.command("changeassistant") & ~BANNED_USERS)
@@ -15,13 +15,13 @@ from BADMUSIC.utils.decorators import AdminActual
 async def assis_change(client, message: Message, _):
     if await assistant() == True:
         return await message.reply_text(
-            "sᴏʀʀʏ sɪʀ! ɪɴ ʙᴏᴛ sᴇʀᴠᴇʀ ᴏɴʟʏ ᴏɴʀ ᴀssɪsᴛᴀɴᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇʀᴇғᴏʀᴇ ʏᴏᴜ ᴄᴀɴᴛ ᴄʜᴀɴɢᴇ ᴀssɪsᴛᴀɴᴛ"
+            "✦ sᴏʀʀʏ sɪʀ! ɪɴ ʙᴏᴛ sᴇʀᴠᴇʀ ᴏɴʟʏ ᴏɴʀ ᴀssɪsᴛᴀɴᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇʀᴇғᴏʀᴇ ʏᴏᴜ ᴄᴀɴᴛ ᴄʜᴀɴɢᴇ ᴀssɪsᴛᴀɴᴛ"
         )
-    usage = f"**ᴅᴇᴛᴇᴄᴛᴇᴅ ᴡʀᴏɴɢ ᴄᴏᴍᴍᴀɴᴅ ᴜsᴀsɢᴇ \n**ᴜsᴀsɢᴇ:**\n/changeassistant - ᴛᴏ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ɢʀᴏᴜᴘ's ᴀssɪsᴛᴀɴᴛ ᴛᴏ ʀᴀɴᴅᴏᴍ ᴀssɪsᴛᴀɴᴛ ɪɴ ʙᴏᴛ sᴇʀᴠᴇʀ"
+    usage = f"**✦ ᴅᴇᴛᴇᴄᴛᴇᴅ ᴡʀᴏɴɢ ᴄᴏᴍᴍᴀɴᴅ ᴜsᴀsɢᴇ \n**✦ ᴜsᴀsɢᴇ:**\n/✦ changeassistant - ᴛᴏ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ɢʀᴏᴜᴘ's ᴀssɪsᴛᴀɴᴛ ᴛᴏ ʀᴀɴᴅᴏᴍ ᴀssɪsᴛᴀɴᴛ ɪɴ ʙᴏᴛ sᴇʀᴠᴇʀ"
     if len(message.command) > 2:
         return await message.reply_text(usage)
     a = await get_assistant(message.chat.id)
-    DETAILS = f"ʏᴏᴜʀ ᴄʜᴀᴛ's ᴀssɪsᴛᴀɴᴛ ʜᴀs ʙᴇᴇɴ ᴄʜᴀɴɢᴇᴅ ғʀᴏᴍ [{a.name}](https://t.me/{a.username}) "
+    DETAILS = f"✦ ʏᴏᴜʀ ᴄʜᴀᴛ's ᴀssɪsᴛᴀɴᴛ ʜᴀs ʙᴇᴇɴ ᴄʜᴀɴɢᴇᴅ ғʀᴏᴍ [{a.name}](https://t.me/{a.username}) "
     if not message.chat.id == LOG_GROUP_ID:
         try:
             await a.leave_chat(message.chat.id)
@@ -41,7 +41,7 @@ async def assis_change(client, message: Message, _):
 async def assis_set(client, message: Message, _):
     if await assistant():
         return await message.reply_text(
-            "sᴏʀʀʏ sɪʀ! ɪɴ ʙᴏᴛ sᴇʀᴠᴇʀ ᴏɴʟʏ ᴏɴᴇ ᴀssɪsᴛᴀɴᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇʀᴇғᴏʀᴇ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴄʜᴀɴɢᴇ ᴀssɪsᴛᴀɴᴛ"
+            "✦ sᴏʀʀʏ sɪʀ! ɪɴ ʙᴏᴛ sᴇʀᴠᴇʀ ᴏɴʟʏ ᴏɴᴇ ᴀssɪsᴛᴀɴᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇʀᴇғᴏʀᴇ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴄʜᴀɴɢᴇ ᴀssɪsᴛᴀɴᴛ"
         )
     usage = await get_assistant_details()
     if len(message.command) != 2:
@@ -61,7 +61,7 @@ async def assis_set(client, message: Message, _):
     except:
         pass
     await message.reply_text(
-        "**Yᴏᴜʀ ᴄʜᴀᴛ's ɴᴇᴡ ᴀssɪsᴛᴀɴᴛ ᴅᴇᴛᴀɪʟs:**\nAssɪsᴛᴀɴᴛ Nᴀᴍᴇ :- {b.name}\nUsᴇʀɴᴀᴍᴇ :- @{b.username}\nID:- {b.id}",
+        "**✦ Yᴏᴜʀ ᴄʜᴀᴛ's ɴᴇᴡ ᴀssɪsᴛᴀɴᴛ ᴅᴇᴛᴀɪʟs:**\n✦ Assɪsᴛᴀɴᴛ Nᴀᴍᴇ :- {b.name}\n✦ Usᴇʀɴᴀᴍᴇ :- @{b.username}\n✦ ID:- {b.id}",
         disable_web_page_preview=True,
     )
 
@@ -71,6 +71,6 @@ async def assis_set(client, message: Message, _):
 async def check_ass(client, message: Message, _):
     a = await get_assistant(message.chat.id)
     await message.reply_text(
-        "**Yᴏᴜʀ ᴄʜᴀᴛ's ᴀssɪsᴛᴀɴᴛ ᴅᴇᴛᴀɪʟs:**\nAssɪsᴛᴀɴᴛ Nᴀᴍᴇ :- {a.name}\nAssɪsᴛᴀɴᴛ\nUsᴇʀɴᴀᴍᴇ :- @{a.username}\nAssɪsᴛᴀɴᴛ ID:- {a.id}",
+        "**✦ Yᴏᴜʀ ᴄʜᴀᴛ's ᴀssɪsᴛᴀɴᴛ ᴅᴇᴛᴀɪʟs:**\n✦ Assɪsᴛᴀɴᴛ Nᴀᴍᴇ :- {a.name}\n✦ Assɪsᴛᴀɴᴛ\n✦ Usᴇʀɴᴀᴍᴇ :- @{a.username}\n✦ Assɪsᴛᴀɴᴛ ID:- {a.id}",
         disable_web_page_preview=True,
     )
