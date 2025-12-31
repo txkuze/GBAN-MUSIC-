@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from BADMUSIC.utils.admin_check import admin_check
+from UCHIHA.utils.admin_check import admin_check
 
 USE_AS_BOT = True
 
