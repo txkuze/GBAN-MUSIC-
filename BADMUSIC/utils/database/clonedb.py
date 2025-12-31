@@ -1,4 +1,4 @@
-from BADMUSIC.core.mongo import mongodb, pymongodb
+from UCHIHA.core.mongo import mongodb, pymongodb
 from typing import Dict, List, Union
 
 cloneownerdb = mongodb.cloneownerdb
