@@ -8,8 +8,8 @@ from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import ChatPrivileges, Message
 
-from BADMUSIC import app
-from BADMUSIC.utils.database import *
+from UCHIHA import app
+from UCHIHA.utils.database import *
 
 other_filters = filters.group & ~filters.via_bot & ~filters.forwarded
 other_filters2 = filters.private & ~filters.via_bot & ~filters.forwarded
@@ -104,7 +104,7 @@ async def start_group_call(c: Client, m: Message):
             )
             await msg.edit_text("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ꜱᴛᴀʀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ⚡️~!")
         except:
-            await msg.edit_text("ɢɪᴠᴇ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ⚡")
+            await msg.edit_text("ɢɪᴠᴇ sᴜᴘᴇʀʙᴀɴ ʙᴏᴛ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ⚡")
 
 
 @app.on_message(filters.command(["vcend", "endvc"], ["/", "!"]))
