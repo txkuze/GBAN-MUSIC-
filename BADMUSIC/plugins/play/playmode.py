@@ -6,10 +6,10 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from BADMUSIC import app
-from BADMUSIC.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from BADMUSIC.utils.decorators import language
-from BADMUSIC.utils.inline.settings import playmode_users_markup
+from UCHIHA import app
+from UCHIHA.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from UCHIHA.utils.decorators import language
+from UCHIHA.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
