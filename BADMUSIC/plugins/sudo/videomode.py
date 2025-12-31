@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 import config
 from strings import get_command
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.database import add_off, add_on
-from BADMUSIC.utils.decorators.language import language
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.database import add_off, add_on
+from UCHIHA.utils.decorators.language import language
 
 # Commands
 VIDEOMODE_COMMAND = get_command("VIDEOMODE_COMMAND")
