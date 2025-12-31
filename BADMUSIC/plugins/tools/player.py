@@ -5,9 +5,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from BADMUSIC import app
-from BADMUSIC.misc import db
-from BADMUSIC.utils.decorators import AdminRightsCheck
+from UCHIHA import app
+from UCHIHA.misc import db
+from UCHIHA.utils.decorators import AdminRightsCheck
 
 
 @app.on_message(
