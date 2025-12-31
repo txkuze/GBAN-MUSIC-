@@ -8,10 +8,10 @@ from pyrogram import idle
 
 import config
 from config import BANNED_USERS
-from BADMUSIC import HELPABLE, LOGGER, app, userbot
-from BADMUSIC.core.call import BAD
-from BADMUSIC.plugins import ALL_MODULES
-from BADMUSIC.utils.database import get_banned_users, get_gbanned
+from UCHIHA import HELPABLE, LOGGER, app, userbot
+from UCHIHA.core.call import ARJUN
+from UCHIHA.plugins import ALL_MODULES
+from UCHIHA.utils.database import get_banned_users, get_gbanned
 
 
 async def init():
@@ -22,12 +22,12 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("BADMUSIC").error(
+        LOGGER("UCHIHA").error(
             "No Assistant Clients Vars Defined!.. Exiting Process."
         )
         return
     if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
-        LOGGER("BADMUSIC").warning(
+        LOGGER("UCHIHA").warning(
             "No Spotify Vars defined. Your bot won't be able to play spotify queries."
         )
 
@@ -49,15 +49,15 @@ async def init():
         if hasattr(imported_module, "__MODULE__") and imported_module.__MODULE__:
             if hasattr(imported_module, "__HELP__") and imported_module.__HELP__:
                 HELPABLE[imported_module.__MODULE__.lower()] = imported_module
-    LOGGER("BADMUSIC.plugins").info("Successfully Imported All Modules ")
+    LOGGER("UCHIHA.plugins").info("Successfully Imported All Modules ")
 
     await userbot.start()
     await BAD.start()
     await BAD.decorators()
-    LOGGER("BADMUSIC").info("BADMUSIC STARTED SUCCESSFULLY 🕊️")
+    LOGGER("UCHIHA").info("SUPERBAN BOT STARTED SUCCESSFULLY 🕊️")
     await idle()
 
 
 if __name__ == "__main__":
     asyncio.get_event_loop_policy().get_event_loop().run_until_complete(init())
-    LOGGER("BADMUSIC").info("Stopping BADMUSIC! GoodBye")
+    LOGGER("UCHIHA").info("Stopping SUPERBAN! GoodBye")
