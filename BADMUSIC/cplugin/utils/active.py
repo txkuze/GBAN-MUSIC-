@@ -1,4 +1,4 @@
-from BADMUSIC.misc import clonedb
+from UCHIHA.misc import clonedb
 
 active = []
 stream = {}
