@@ -5,18 +5,18 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
-from BADMUSIC import Platform, app
-from BADMUSIC.utils.database import (
+from UCHIHA import Platform, app
+from UCHIHA.utils.database import (
     delete_playlist,
     get_playlist,
     get_playlist_names,
     save_playlist,
 )
-from BADMUSIC.utils.decorators import language, languageCB
-from BADMUSIC.utils.decorators.play import botplaylist_markup
-from BADMUSIC.utils.inline.playlist import get_playlist_markup, warning_markup
-from BADMUSIC.utils.pastebin import BADbin
-from BADMUSIC.utils.stream.stream import stream
+from UCHIHA.utils.decorators import language, languageCB
+from UCHIHA.utils.decorators.play import botplaylist_markup
+from UCHIHA.utils.inline.playlist import get_playlist_markup, warning_markup
+from UCHIHA.utils.pastebin import ARJUNbin
+from UCHIHA.utils.stream.stream import stream
 
 
 
