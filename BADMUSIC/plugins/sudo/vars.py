@@ -4,10 +4,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.database.memorydatabase import get_video_limit
-from BADMUSIC.utils.formatters import convert_bytes
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.database.memorydatabase import get_video_limit
+from UCHIHA.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
