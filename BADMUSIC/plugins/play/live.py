@@ -4,10 +4,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from BADMUSIC import Platform, app
-from BADMUSIC.utils.channelplay import get_channeplayCB
-from BADMUSIC.utils.decorators.language import languageCB
-from BADMUSIC.utils.stream.stream import stream
+from UCHIHA import Platform, app
+from UCHIHA.utils.channelplay import get_channeplayCB
+from UCHIHA.utils.decorators.language import languageCB
+from UCHIHA.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
