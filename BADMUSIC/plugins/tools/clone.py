@@ -10,11 +10,11 @@ from pyrogram.errors.exceptions.bad_request_400 import (
     AccessTokenExpired,
     AccessTokenInvalid,
 )
-from BADMUSIC.utils.database import get_assistant
+from UCHIHA.utils.database import get_assistant
 from config import API_ID, API_HASH
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.database import get_assistant, clonebotdb
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.database import get_assistant, clonebotdb
 from config import LOG_GROUP_ID 
 
 CLONES = set()
@@ -32,7 +32,7 @@ async def clone_txt(client, message):
                 API_ID,
                 API_HASH,
                 bot_token=bot_token,
-                plugins=dict(root="BADMUSIC.cplugin"),
+                plugins=dict(root="UCHIHA.cplugin"),
             )
             await ai.start()
             bot = await ai.get_me()
@@ -75,7 +75,7 @@ async def clone_txt(client, message):
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**ᴋɪɴᴅʟʏ ғᴏᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @vk_zone ᴛᴏ ɢᴇᴛ ᴀssɪsᴛᴀɴᴄᴇ**"
+                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**ᴋɪɴᴅʟʏ ғᴏᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @SNOWY_HOMETOWN ᴛᴏ ɢᴇᴛ ᴀssɪsᴛᴀɴᴄᴇ**"
             )
     else:
         await message.reply_text(
@@ -111,7 +111,7 @@ async def delete_cloned_bot(client, message):
             clonebotdb.delete_one({"token": bot_token})
             CLONES.remove(cloned_bot["bot_id"])
             await message.reply_text(
-                "**🤖 ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʙᴏᴛ ʜᴀꜱ ʙᴇᴇɴ ᴅɪꜱᴄᴏɴɴᴇᴄᴛᴇᴅ ꜰʀᴏᴍ ᴍʏ ꜱᴇʀᴠᴇʀ ☠️\nᴄʟᴏɴᴇ ʙʏ :- /clone**"
+                "**🤖 ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʙᴏᴛ ʜᴀꜱ ʙᴇᴇɴ ᴅɪꜱᴄᴏɴɴᴇᴄᴛᴇᴅ ꜰʀᴏᴍ sᴜᴘᴇʀʙᴀɴ'S ꜱᴇʀᴠᴇʀ \nᴄʟᴏɴᴇ ʙʏ :- /clone**"
             )
         else:
             await message.reply_text(
@@ -134,7 +134,7 @@ async def restart_bots():
                 API_ID,
                 API_HASH,
                 bot_token=bot_token,
-                plugins=dict(root="BADMUSIC.cplugin"),
+                plugins=dict(root="UCHIHA.cplugin"),
             )
             await ai.start()
             bot = await ai.get_me()
