@@ -11,10 +11,10 @@ from pyrogram.errors import ChannelPrivate
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE
 from config import adminlist
 from strings import get_string
-from BADMUSIC import Platform, app
-from BADMUSIC.core.call import BAD
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils.database import (
+from UCHIHA import Platform, app
+from UCHIHA.core.call import ARJUN
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -25,7 +25,7 @@ from BADMUSIC.utils.database import (
     is_maintenance,
     is_served_private_chat,
 )
-from BADMUSIC.utils.inline import botplaylist_markup
+from UCHIHA.utils.inline import botplaylist_markup
 
 links = {}
 
