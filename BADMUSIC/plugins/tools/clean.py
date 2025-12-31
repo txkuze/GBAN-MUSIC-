@@ -3,8 +3,8 @@ import shutil
 
 from pyrogram import filters
 
-from BADMUSIC import app
-from BADMUSIC.misc import SUDOERS
+from UCHIHA import app
+from UCHIHA.misc import SUDOERS
 
 
 @app.on_message(filters.command("clean") & SUDOERS)
@@ -17,3 +17,4 @@ async def clean(_, message):
     os.mkdir(dir)
     os.mkdir(dir1)
     await A.edit("ᴛᴇᴍᴘ ᴅɪʀᴇᴄᴛᴏʀɪᴇs ᴀʀᴇ ᴄʟᴇᴀɴᴇᴅ")
+
