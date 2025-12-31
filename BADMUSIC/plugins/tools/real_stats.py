@@ -5,10 +5,10 @@ from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from BADMUSIC import app
-from BADMUSIC.core.mongo import mongodb
-from BADMUSIC.misc import SUDOERS
-from BADMUSIC.utils import get_readable_time
+from UCHIHA import app
+from UCHIHA.core.mongo import mongodb
+from UCHIHA.misc import SUDOERS
+from UCHIHA.utils import get_readable_time
 
 chatsdb = mongodb.chats
 usersdb = mongodb.tgusersdb
