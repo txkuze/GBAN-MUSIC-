@@ -5,11 +5,11 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS, PING_IMG_URL
-from BADMUSIC import app
-from BADMUSIC.core.call import BAD
-from BADMUSIC.utils import bot_sys_stats
-from BADMUSIC.utils.decorators.language import language
-from BADMUSIC.utils.inline import support_group_markup
+from UCHIHA import app
+from UCHIHA.core.call import BAD
+from UCHIHA.utils import bot_sys_stats
+from UCHIHA.utils.decorators.language import language
+from UCHIHA.utils.inline import support_group_markup
 
 
 @app.on_message(filters.command(["ping", "alive"]) & ~BANNED_USERS)
