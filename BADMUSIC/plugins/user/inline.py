@@ -11,8 +11,8 @@ from pyrogram import Client, filters
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import BANNED_USERS
-from BADMUSIC import app
-from BADMUSIC.utils.inlinequery import answer
+from UCHIHA import app
+from UCHIHA.utils.inlinequery import answer
 
 
 @Client.on_inline_query(~BANNED_USERS)
@@ -47,16 +47,20 @@ async def inline_query_handler(client, query):
                     ],
                 ]
             )
-            searched_text = f"""
-❇️**ᴛɪᴛʟᴇ:** [{title}]({link})
 
-⏳**ᴅᴜʀᴀᴛɪᴏɴ:** {duration} Mins
-👀**ᴠɪᴇᴡs:** `{views}`
-⏰**ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {published}
-🎥**ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ:** {channel}
-📎**ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ғʀᴏᴍ ʜᴇʀᴇ]({channellink})
+          searched_text = f"""     
+📢 sᴜᴘᴇʀʙᴀɴ streaming 
+
+❇️**ᴛɪᴛʟᴇ:** [{title}]({link})
+⏳**✦ ᴅᴜʀᴀᴛɪᴏɴ:** {duration} Mins
+👀**✦ ᴠɪᴇᴡs:** `{views}`
+⏰**✦ ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {published}
+🎥**✦ ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ:** {channel}
+📎**✦ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ғʀᴏᴍ ʜᴇʀᴇ]({channellink})
 
 __ʀᴇᴘʟʏ ᴡɪᴛʜ /play ᴏɴ ᴛʜɪs sᴇᴀʀᴄʜᴇᴅ ᴍᴇssᴀɢᴇ ᴛᴏ sᴛʀᴇᴀᴍ ɪᴛ ᴏɴ ᴠᴏɪᴄᴇᴄʜᴀᴛ.__
+
+✦ ᴍᴀᴅᴇ ʙʏ 💗 [⚓˹ᴧɴσɴʏᴍσᴜs ⇾ ᴄᴏᴅᴇʀ - ❕](https://t.me/uchiha_owner)
 
 ⚡️ ** ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ʙʏ {Client.mention} **"""
             answers.append(
